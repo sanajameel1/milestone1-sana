@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Mileston 5: Unique Path and Sharable Link Task 1 BY <br>
+        Noor Fatima</h1>
+    <p>Unique URL Generation (50 points)</p>
+    <p>Does the system generate a unique path for each user's user based on their username</p>
+   
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Data URL:</label>
+            <input type="text" id="username" required/><br>
+
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="phone">Phone:</label>
+          <input type="phone" id="phone" name="phone" required><br>
+
+          <label for="Adress">Address:</label>
+          <input type="Adress" id="Adress" name="Adress" required><br>
+
+          <!--profile picture-->
+          <label for = "profilepicture">Profile Picture</label>
+          <input type="file" id="profilePicture" accept="image/*" required>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea id="education" name="education" rows="4" required></textarea><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">skills</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br>
+            
+        </fieldset>
+        <button type="submit">Generate Resume Below</button>
+
+
+    </form>
+    <div id="resumeOutput">
+        <!--Resume  will be generated below-->
+    </div>
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
